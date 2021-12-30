@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#439eb8">
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:layout_weight="0" >
+            <Button
+                android:id="@+id/backBt"
+                android:layout_width="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0"
+                android:background="@drawable/fanhui"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Record"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="0dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp">
+
+            <Chronometer
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.BUAARSE.faultdetector.ShowWaveView
+                android:id="@+id/image_wave"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/deleteBt"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/shadow"
+                android:drawableTop="@drawable/delete"
+                android:paddingTop="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/startBt"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/start"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/stopBt"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/stop"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:gravity="center">
+            <Button
+                android:id="@+id/submitBt"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/shadow"
+                android:drawableTop="@drawable/submit"
+                android:paddingTop="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

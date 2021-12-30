@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#e8e8e8">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/id_tab1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_img1"
+            android:scaleType="centerInside"
+            android:clickable="false"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/history_1"
+            android:background="#00000000"/>
+        <TextView
+            android:id="@+id/tab_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2c2c2c"
+            android:text="History"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_tab2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_img2"
+            android:scaleType="centerInside"
+            android:clickable="false"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/home_1"
+            android:background="#00000000"/>
+        <TextView
+            android:id="@+id/tab_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2c2c2c"
+            android:text="Home"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_tab3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_img3"
+            android:scaleType="centerInside"
+            android:clickable="false"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/shezhi_1"
+            android:background="#00000000"/>
+        <TextView
+            android:id="@+id/tab_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2c2c2c"
+            android:text="Setting"/>
+    </LinearLayout>
+
+</LinearLayout>
